@@ -60,13 +60,23 @@ const HTML = '<header>\n\
 
 console.log(HTML);
 
+const H0 = '<header>' +
+                '<img>' +
+                '<nav>' +
+                
+                '</nav>' +
+            '</header>' +
+
+
+
 const H2 = `<header>
             <img src="${imgSrc}" alt="logo" class="logo">
-        <nav>
-            <a href="#">Link></a>
-            <a href="#">Link></a>
-            <a href="#">Link></a>
-            <a href="#">Link></a>
-        </nav>
-    </header>`;
+                <nav>
+                    <a href="#">Link></a>
+                    <a href="#">Link></a>
+                    <a href="#">Link></a>
+                    <a href="#">Link></a>
+                </nav>
+            </header>`;
+
 console.log(H2);
