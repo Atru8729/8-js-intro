@@ -26,6 +26,7 @@ const dictionary = ['labas', 'rytas', 'sakau', 'tau', 'raketa'];
 const paskutinisZodis = dictionary[dictionary.length - 1];
 console.log(paskutinisZodis);
 
+console.log('....................');
 
 const abc = ['b', 'c'];
 console.log(abc);
@@ -48,7 +49,7 @@ console.log(abc);
 console.log('....................');
 
 const a1 = ['a', 'b'];
-const a2 = ['c', 'c'];
+const a2 = ['c', 'd'];
 const a12 = a1.concat(a2);
 console.log(a1);
 console.log(a2);
