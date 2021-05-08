@@ -14,7 +14,21 @@ function correctPolishLetters (string) {
     let convertedString = '';
 
     // einame per raides
+    for (let i=0; i<string.length; i++) {
         // paimu raide
+        const raide = string[i];
+
+        switch (raide) {
+            case 'ą':
+                convertedString += 'a';
+                break;
+            case 'ć':
+                convertedString += 'c';
+                break;
+
+        }
+    }
+        
         // jeigu raide yra ne lenkiska
             // tiesiog pridedame prie convertedString
         // jeigu tai lenkiska
@@ -24,6 +38,6 @@ function correctPolishLetters (string) {
   }
 
 
-  console.log(correctPolishLetters("Jędrzej Błądziński"),"Jedrzej Bladzinski");
-  console.log(correctPolishLetters("Lech Wałęsa"),"Lech Walesa");
-  console.log(correctPolishLetters("Maria Skłodowska-Curie"),"Maria Sklodowska-Curie");
+  console.log(correctPolishLetters("Jędrzej Błądziński"), '->', "Jedrzej Bladzinski");
+  console.log(correctPolishLetters("Lech Wałęsa"), '->', "Lech Walesa");
+  console.log(correctPolishLetters("Maria Skłodowska-Curie"), '->', "Maria Sklodowska-Curie");
