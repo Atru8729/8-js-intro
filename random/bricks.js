@@ -15,11 +15,12 @@ function bricks(sienuPlociai, sienosAukstis, plytosAukstis, plytosPlotis) {
         bendrasPlotis += sienuPlociai[i];
     }
 
-    const plytuPlotyje = bendrasPlotis / plytosPlotis;
-    const plytuAukstyje = sienosAukstis / plytosAukstis;
+    const plytuPlotyje = Math.ceil(bendrasPlotis / plytosPlotis);
+    const plytuAukstyje = Math.ceil(sienosAukstis / plytosAukstis);
     return plytuPlotyje * plytuAukstyje;
     }
 
 console.log(bricks([1, 2], 1, 0.1, 0.2), '->', 150);
 console.log(bricks([1, 1, 1], 1, 0.1, 0.2), '->', 150);
 console.log(bricks([2, 1, 3], 0.5, 0.1, 0.2), '->', 150);
+console.log(bricks([1.05], 1.05, 0.1, 0.2), '->', 66);
